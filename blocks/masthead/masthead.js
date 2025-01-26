@@ -1,4 +1,4 @@
-import { getMetadata } from "../../scripts/aem.js";
+import { getMetadata, createOptimizedPicture } from "../../scripts/aem.js";
 import { loadFragment } from "../fragment/fragment.js";
 
 /**
@@ -27,6 +27,17 @@ export default async function decorate(block) {
     (element, r) => {
       if (r == 0) {
         element.className = "imageMe";
+        element
+          .querySelectorAll("picture > img")
+          .forEach((img) =>
+            img
+              .closest("picture")
+              .replaceWith(
+                createOptimizedPicture(img.src, img.alt, false, [
+                  { width: "750" },
+                ])
+              )
+          );
       } else if (r == 1) {
         element.className = "titleMe";
       } else if (r == 2) {
