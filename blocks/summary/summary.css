@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+}
+
 div.summary {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -11,11 +16,13 @@ div.summary {
     max-width: 800px;
     text-align: justify;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 150px; /* Prevent layout shifts by setting a minimum height */
 }
 
 .summary-container {
     background-color: blanchedalmond;
 }
+
 div.summary:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
