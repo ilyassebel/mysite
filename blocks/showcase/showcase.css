@@ -1,0 +1,79 @@
+.showcase {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.showcase-header p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.showcase-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.showcase-title p {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.showcase-text {
+    margin-left: 20px;
+}
+
+.subtitle {
+    font-weight: bold;
+    color: #555;
+    margin-top: 10px;
+}
+
+.description {
+    margin-bottom: 10px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.showcase-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.showcase-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .showcase-header p {
+        font-size: 1.8em;
+    }
+
+    .showcase-item {
+        padding: 15px;
+    }
+
+    .showcase-title p {
+        font-size: 1.1em;
+    }
+}

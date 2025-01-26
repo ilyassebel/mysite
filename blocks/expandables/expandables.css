@@ -1,0 +1,139 @@
+.expandables {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.expandable-item {
+    background: linear-gradient(135deg, #ffffff, #eaf2f8);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.expandable-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.expandable-item .expand-pic {
+    width: 70%;
+    margin: 15px auto;
+    border-radius: 12px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.expandable-item .expand-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expandable-item .expand-pic:hover img {
+    transform: scale(1.05);
+}
+
+.expandable-item .expand-text .title {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #2c3e50;
+    padding: 15px 20px;
+    background-color: #e0f7fa;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.expandable-item .expand-text {
+    padding: 0 20px;
+    background-color: #f7f7f7;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    margin-bottom: 40px;
+}
+
+.expandable-item .expand-text .description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #34495e;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.expandable-item .expand-text .description.open {
+    max-height: 1500px;
+    padding: 15px 20px 40px 20px;
+}
+
+.expandable-item + .expandable-item {
+    margin-top: 20px;
+}
+
+.expandable-container {
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.expandable-item .expand-indicator {
+    position: absolute;
+    bottom: 30px; /* Increase the space between the indicator and the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+    color: #007bff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.expandable-item .expand-indicator:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .expandables {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .expandable-item .expand-text .title {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+
+    .expandable-item .expand-text .description {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .expandables {
+        gap: 15px;
+    }
+
+    .expandable-item .expand-pic {
+        width: 90%;
+    }
+
+    .expandable-item .expand-text .title {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    .expandable-item .expand-text .description {
+        font-size: 0.9em;
+    }
+}

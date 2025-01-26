@@ -1,0 +1,20 @@
+div.title {
+    font-size: 30px;
+    color: rgb(34, 110, 147);
+    line-height: 50px;
+    text-align: center;
+}
+
+div.subtitle {
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+    line-height: 40px;
+    font-weight: bold;
+}
+
+div.description {
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    line-height: 30px;
+    margin-top: 10px;
+}

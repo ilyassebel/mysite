@@ -1,0 +1,139 @@
+/* Publication Container */
+/* Publication Container */
+.reference-container {
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(280px, 1fr)
+    ); /* More responsive */
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%; /* Ensures full screen width */
+    box-sizing: border-box;
+    background-color: #e8f9f1;
+}
+
+/* Publication Item */
+.reference-item {
+    background-color: #ffffff; /* Clean white background for each item */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #34495e; /* Deep grayish-blue for text */
+    border: 1px solid #ecf0f1; /* Light border for a clean look */
+}
+
+.reference-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Reference Item Text */
+.reference-item .year {
+    font-weight: bold;
+    color: #2ecc71; /* Vivid green for year, symbolizing freshness and importance */
+    font-size: 1.2em;
+}
+
+.reference-item .title {
+    font-size: 1.25em;
+    color: #2c3e50; /* Rich dark blue for the title, more professional */
+    margin: 12px 0;
+    font-weight: 600; /* Slightly bolder title */
+}
+
+.reference-item .authors,
+.reference-item .conference {
+    font-size: 1em;
+    color: #7f8c8d; /* Soft, muted gray for secondary text */
+}
+
+.reference-item .ar {
+    font-size: 1em;
+    font-weight: bold;
+    color: #3498db; /* Bold blue for Arabic references, easy to spot */
+}
+
+.reference-item .link {
+    font-size: 1.1em;
+    color: #e67e22; /* Strong, vibrant orange for links */
+    text-decoration: none;
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.reference-item .link:hover {
+    text-decoration: underline;
+    color: #f39c12; /* Slightly darker orange when hovered */
+}
+
+/* Hover and Active Effects */
+a:focus,
+a:hover {
+    text-decoration: underline;
+    color: #e67e22; /* Consistency with link color */
+}
+
+/* Publication Item */
+.reference-item {
+    background-color: #ffffff; /* Clean white background for each item */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #34495e; /* Deep grayish-blue for text */
+    border: 1px solid #ecf0f1; /* Light border for a clean look */
+}
+
+.reference-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Reference Item Text */
+.reference-item .year {
+    font-weight: bold;
+    color: #2ecc71; /* Vivid green for year, symbolizing freshness and importance */
+    font-size: 1.2em;
+}
+
+.reference-item .title {
+    font-size: 1.25em;
+    color: #2c3e50; /* Rich dark blue for the title, more professional */
+    margin: 12px 0;
+    font-weight: 600; /* Slightly bolder title */
+}
+
+.reference-item .authors,
+.reference-item .conference {
+    font-size: 1em;
+    color: #7f8c8d; /* Soft, muted gray for secondary text */
+}
+
+.reference-item .ar {
+    font-size: 1em;
+    font-weight: bold;
+    color: #3498db; /* Bold blue for Arabic references, easy to spot */
+}
+
+.reference-item .link {
+    font-size: 1.1em;
+    color: #e67e22; /* Strong, vibrant orange for links */
+    text-decoration: none;
+    margin-top: 12px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.reference-item .link:hover {
+    text-decoration: underline;
+    color: #f39c12;
+}
+
+/* Hover and Active Effects */
+a:focus,
+a:hover {
+    text-decoration: underline;
+    color: #e67e22;
+}
